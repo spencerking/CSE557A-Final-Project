@@ -5,33 +5,80 @@ d3.tsv("./data/data_removed_NA_genes.tsv").then(function(data) {
     dataset = data;
 });
 
-// This never sets the dataset variable, idk why
-/*
-function loadData() {
-    d = null;
-    d3.tsv("./data/data_removed_NA_genes.tsv").then(function(data) {
-	//console.log(data[0]);
-	//dataset = data;
-	d = data;
+/*function loadData() {
+    const dataset = d3.tsv("./data/data_removed_NA_genes.tsv").then(function(data) {
+	return data;
     });
 
-    return d;
+    x = null
+    dataset.then(function(value) {
+	x =  value;
+    });
+
+    return x;
 }
+
+dataset = loadData();
 */
 
-// https://stackoverflow.com/questions/6921895/synchronous-delay-in-code-execution
-const syncWait = ms => {
-    const end = Date.now() + ms
-    while (Date.now() < end) continue
+// Returns a key-value array of diseases and their mutation counts
+function uniqueDiseases(dataset) {
+    diseases = {};
+    dataset.forEach(function(entry) {
+	name = entry['diseaseName'];
+	if (diseases[name] == null) {
+	    diseases[name] = 1;
+	} else {
+	    diseases[name] += 1;
+	}
+    });
+
+    return diseases;
 }
 
-console.log(dataset);
+// Returns a key-value array of organs and their mutation counts
+function uniqueOrgans(dataset) {
+    organs = {};
+    dataset.forEach(function(entry) {
+	name = entry['Organ'];
+	if (organs[name] == null) {
+	    organs[name] = 1;
+	} else {
+	    organs[name] += 1;
+	}
+    });
 
-//dataset = loadData();
+    return organs;
+}
 
-// For some reason this still prints null
-//syncWait(5000);
-//console.log(dataset);
+// Returns a key-value array of diseases and their severity
+function diseaseSeverity(dataset) {
+    severity = {};
+    dataset.forEach(function(entry) {
+	name = entry['diseaseName'];
+	if (severity[name] == null) {
+	    severity[name] = entry['Severity'];
+	} else {
+	    // TODO:
+	    // Can probably just remove this else and assume it'll all work fine
+	    if (severity[name] != entry['Severity']) {
+		console.log('This should never happen if I annotate the data right');
+	    }
+	}
+    });
 
-// This one prints out the data correctly
-setTimeout(() => {  console.log(dataset); }, 100);
+    return severity;
+}
+
+d = null;
+o = null;
+s = null;
+    
+setTimeout(() => {
+    d = uniqueDiseases(dataset);
+    o = uniqueOrgans(dataset);
+    s = diseaseSeverity(dataset);
+    console.log(d);
+    console.log(o);
+    console.log(s);
+}, 100);
