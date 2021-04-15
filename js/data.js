@@ -107,7 +107,7 @@ function getTopNDiseasesBySeverity(n, disSev) {
     return topn;
 }
 
-// Copied from: https://www.d3-graph-gallery.com/graph/pie_annotation.html
+// Largely copied from: https://www.d3-graph-gallery.com/graph/pie_annotation.html
 function buildOrganPieChart(organs) {
 // set the dimensions and margins of the graph
 var width = 450
@@ -125,9 +125,27 @@ var svg = d3.select("#my_dataviz")
   .append("g")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-// Create dummy data
-var data = organs;
+// Prepare data
+    var data = {}; //organs;
 
+    // Sort borrowed from:
+    // https://stackoverflow.com/questions/1069666/sorting-object-property-by-values
+    const sortable = Object.entries(organs)
+    .sort(([,a],[,b]) => b-a)
+    .reduce((r, [k, v]) => ({ ...r, [k]: v }), {});
+
+    i = 0;
+    otherCount = 0;
+    for (const [key, value] of Object.entries(sortable)) {
+	if (i < 5) {
+	    data[key] = value;
+	    i++;
+	} else {
+	    otherCount += value;
+	}
+    };
+    data['Other'] = otherCount;
+    
 // set the color scale
 var color = d3.scaleOrdinal()
   .domain(data)
