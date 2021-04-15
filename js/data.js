@@ -70,8 +70,45 @@ function diseaseSeverity(dataset) {
     return severity;
 }
 
+function getTopNDiseasesBySeverity(n, disSev) {
+    topn = {};
+    ds = disSev;    
+    i = 0;
+
+    // Get critical diseases
+    for (const [disease, severity] of Object.entries(ds)) {
+	//console.log(key);
+	//console.log(value);
+	if (i == n) {
+	    break;
+	}
+	
+	if (severity == 'Critical') {
+	    topn[disease] = severity;
+	    i++;
+	}
+    }
+
+    // Get chronic diseases
+    for (const [disease, severity] of Object.entries(ds)) {
+	if (i == n) {
+	    break;
+	}
+	
+	if (severity == 'Chronic') {
+	    topn[disease] = severity;
+	    i++;
+	}
+    }    
+   
+    // TODO:
+    // Add more loops for additional severity levels
+
+    return topn;
+}
+
 // Copied from: https://www.d3-graph-gallery.com/graph/pie_annotation.html
-function buildOrganPieChart(o) {
+function buildOrganPieChart(organs) {
 // set the dimensions and margins of the graph
 var width = 450
     height = 450
@@ -89,7 +126,7 @@ var svg = d3.select("#my_dataviz")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
 // Create dummy data
-var data = o;
+var data = organs;
 
 // set the color scale
 var color = d3.scaleOrdinal()
@@ -134,13 +171,16 @@ svg
 d = null;
 o = null;
 s = null;
-    
+topNSeverities = null;
+
 setTimeout(() => {
     d = uniqueDiseases(dataset);
     o = uniqueOrgans(dataset);
     s = diseaseSeverity(dataset);
+    topNSeverities = getTopNDiseasesBySeverity(5, s);
     buildOrganPieChart(o);
     console.log(d);
     console.log(o);
     console.log(s);
+    console.log(topNSeverities);
 }, 100);
