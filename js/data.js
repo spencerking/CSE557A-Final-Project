@@ -137,8 +137,8 @@ function buildOrganPieChart(organs) {
     // The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
     var radius = Math.min(width, height) / 2 - margin
 
-    // append the svg object to the div called 'my_dataviz'
-    var svg = d3.select("#my_dataviz")
+    // append the svg object to the div called 'organs-chart'
+    var svg = d3.select("#organs-chart")
 	.append("svg")
 	.attr("width", width)
 	.attr("height", height)
@@ -206,6 +206,15 @@ function buildOrganPieChart(organs) {
 	.style("font-size", 17)
 }
 
+function displaySeverity(sevObj) {
+    for (const [disease, severity] of Object.entries(sevObj)) {	
+	var fragment = document.createDocumentFragment();
+	var element = document.createElement('p');
+	element.innerHTML = disease + ' - ' + severity
+	fragment.appendChild(element);
+	document.getElementById("sev-list").appendChild(fragment);
+    }
+}
 
 
 
@@ -236,4 +245,5 @@ setTimeout(() => {
     console.log(s);
     console.log(topNSeverities);
     console.log(diseaseNotes);
+    displaySeverity(topNSeverities);
 }, 100);
