@@ -257,7 +257,7 @@ setTimeout(() => {
 
 
 function createDiseaseCard(disease) {
-	let card = document.createElement('div');
+   let card = document.createElement('div');
     card.className = 'card';
 
     let cardBody = document.createElement('div');
