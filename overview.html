@@ -8,206 +8,195 @@
     <script src="js/data.js"></script>
   </head>
   <body>
-
     <div class="row">
-      <div class="col-sm-1"></div>
-
-      <div class="col-sm-5">
-	<div class="card">
-	  <div class="card-body">
-	    <h4 class="card-title">Patient Profile</h4>
-	    <h6 class="card-subtitle mb-2 text-muted"></h6>
-	    <p>Patient is a male of Ashkenazi Jewish heritage.</p>
-	    <p>Potential risk factors include:</p>
-	    <p>Bloom syndrome</p>
-	    <p>Canavan disease</p>
-	    <p>Cystic fibrosis</p>
-	    <p>Familial dysautonomia</p>
-	    <p>Fanconi anemia</p>
-	    <p>Gaucher disease</p>
-	    <p>Mucolipidosis IV</p>
-	    <p>Niemann-Pick disease</p>
-	    <p>Tay-Sachs disease</p>
-	    <p>Torsion dystonia</p>
+      <div class="col-sm-4">
+	<div class="row">
+	  <div class="col-sm-12">
+	    <div class="card">
+	      <div class="card-body">
+		<h4 class="card-title">Patient Profile</h4>
+		<h6 class="card-subtitle mb-2 text-muted"></h6>
+		<p>Patient is a male of Ashkenazi Jewish heritage.</p>
+		<p>Potential risk factors include:</p>
+		<p>Bloom syndrome</p>
+		<p>Canavan disease</p>
+		<p>Cystic fibrosis</p>
+		<p>Familial dysautonomia</p>
+		<p>Fanconi anemia</p>
+		<p>Gaucher disease</p>
+		<p>Mucolipidosis IV</p>
+		<p>Niemann-Pick disease</p>
+		<p>Tay-Sachs disease</p>
+		<p>Torsion dystonia</p>
+	      </div>
+	    </div>
 	  </div>
 	</div>
       </div>
-      
-      <div class="col-sm-5">
-	<div class="card">
-	  <div class="card-body">
-	    <h4 class="card-title">Severity</h4>
-	    <h6 class="card-subtitle mb-2 text-muted">Top 5 Most Severe Diseases</h6>
-	    <table class="table">
-	      <thead>
-		<tr>
-		  <th scope="col">Disease</th>
-		  <th scope="col">Severity</th>
-		</tr>		
-	      </thead>
-	      <tbody>
-		<tr>
-		  <th scope="row" id="disease1"></th>
-		  <td id="severity1"></td>
-		</tr>
-		<tr>
-		  <th scope="row" id="disease2"></th>
-		  <td id="severity2"></td>
-		</tr>
-		<tr>
-		  <th scope="row" id="disease3"></th>
-		  <td id="severity3"></td>
-		</tr>
-		<tr>
-		  <th scope="row" id="disease4"></th>
-		  <td id="severity4"></td>
-		</tr>
-		<tr>
-		  <th scope="row" id="disease5"></th>
-		  <td id="severity5"></td>
-		</tr>
-	    </table>
+      <div class="col-sm-4">
+	<div class="row">
+	  <div class="col-sm-12">
+	    <div class="card">
+	      <div class="card-body">
+		<h4 class="card-title">Severity</h4>
+		<h6 class="card-subtitle mb-2 text-muted">Top 5 Most Severe Diseases</h6>
+		<table class="table">
+		  <thead>
+		    <tr>
+		      <th scope="col">Disease</th>
+		      <th scope="col">Severity</th>
+		    </tr>		
+		  </thead>
+		  <tbody>
+		    <tr>
+		      <th scope="row" id="disease1"></th>
+		      <td id="severity1"></td>
+		    </tr>
+		    <tr>
+		      <th scope="row" id="disease2"></th>
+		      <td id="severity2"></td>
+		    </tr>
+		    <tr>
+		      <th scope="row" id="disease3"></th>
+		      <td id="severity3"></td>
+		    </tr>
+		    <tr>
+		      <th scope="row" id="disease4"></th>
+		      <td id="severity4"></td>
+		    </tr>
+		    <tr>
+		      <th scope="row" id="disease5"></th>
+		      <td id="severity5"></td>
+		    </tr>
+		</table>
+	      </div>
+	    </div>
 	  </div>
 	</div>
+	<div class="row mt-4">
+	     <div class="col-sm-12">
+	       <div class="card">
+		 <div class="card-body">
+		   <h4 class="card-title">Mutations Per Organ</h4>
+		   <h6 class="card-subtitle mb-2 text-muted"></h6>
+		   <div id="organs-chart"></div>
+		 </div>
+	       </div>
+	     </div>
+	</div>
       </div>
-      <div class="col-sm-1"></div>
+      <div class="col-sm-4">
+	<div class="row">
+	  <div class="col-sm-12">
+	    <div class="card">
+	      <div class="card-body">
+		<h4 class="card-title">Chromosomes</h4>
+		<h6 class="card-subtitle mb-2 text-muted"></h6>
+		<div id="chromosome-chart"></div>
+		<table class="table">
+		  <thead>
+		    <tr>
+		      <th scope="col">Chromosome</th>
+		      <th scope="col">Mutations</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		      <th scope="row">1</th>
+		      <td id="chr1"></td>
+		    </tr>
+		    <tr>
+		      <th scope="row">2</th>
+		      <td id="chr2"></td>
+		    </tr>
+		    <tr>
+		      <th scope="row">3</th>
+		      <td id="chr3"></td>
+		    </tr>
+		    <tr>
+		      <th scope="row">4</th>
+		      <td id="chr4"></td>
+		    </tr>
+		    <tr>
+		      <th scope="row">5</th>
+		      <td id="chr5"></td>
+		    </tr>
+		    <tr>
+		      <th scope="row">6</th>
+		      <td id="chr6"></td>
+		    </tr>
+		    <tr>
+		      <th scope="row">7</th>
+		      <td id="chr7"></td>
+		    </tr>
+		    <tr>
+		      <th scope="row">8</th>
+		      <td id="chr8"></td>
+		    </tr>
+		    <tr>
+		      <th scope="row">9</th>
+		      <td id="chr9"></td>
+		    </tr>
+		    <tr>
+		      <th scope="row">10</th>
+		      <td id="chr10"></td>
+		    </tr>
+		    <tr>
+		      <th scope="row">11</th>
+		      <td id="chr11"></td>
+		    </tr>
+		    <tr>
+		      <th scope="row">12</th>
+		      <td id="chr12"></td>
+		    </tr>
+		    <tr>
+		      <th scope="row">13</th>
+		      <td id="chr13"></td>
+		    </tr>
+		    <tr>
+		      <th scope="row">14</th>
+		      <td id="chr14"></td>
+		    </tr>
+		    <tr>
+		      <th scope="row">15</th>
+		      <td id="chr15"></td>
+		    </tr>
+		    <tr>
+		      <th scope="row">16</th>
+		      <td id="chr16"></td>
+		    </tr>
+		    <tr>
+		      <th scope="row">17</th>
+		      <td id="chr17"></td>
+		    </tr>
+		    <tr>
+		      <th scope="row">18</th>
+		      <td id="chr18"></td>
+		    </tr>
+		    <tr>
+		      <th scope="row">19</th>
+		      <td id="chr19"></td>
+		    </tr>
+		    <tr>
+		      <th scope="row">20</th>
+		      <td id="chr20"></td>
+		    </tr>
+		    <tr>
+		      <th scope="row">21</th>
+		      <td id="chr21"></td>
+		    </tr>
+		    <tr>
+		      <th scope="row">22</th>
+		      <td id="chr22"></td>
+		    </tr>
+		  </tbody>  
+		</table>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	</div>
+      </div>
     </div>
-    
-    <!--
-    <div class="row">
-      <div class="col-sm-12">
-	<div class="card">
-	  <div class="panel-heading">
-	    <h3 class="panel-title">Severity List</h3>
-	  </div>
-	  <div class="panel-body">
-	    Content
-	  </div>
-	</div>
-    </div>
-      -->
-
-    <div class="row mt-4">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-5">
-	<div class="card">
-	  <div class="card-body">
-	    <h4 class="card-title">Mutations Per Organ</h4>
-	    <h6 class="card-subtitle mb-2 text-muted"></h6>
-	    <div id="organs-chart"></div>
-	  </div>
-	</div>
-      </div>
-      
-      <div class="col-sm-5">
-	<div class="card">
-	  <div class="card-body">
-	    <h4 class="card-title">Chromosomes</h4>
-	    <h6 class="card-subtitle mb-2 text-muted"></h6>
-	    <div id="chromosome-chart"></div>
-	    <table class="table">
-	      <thead>
-		<tr>
-		  <th scope="col">Chromosome</th>
-		  <th scope="col">Mutations</th>
-		</tr>
-	      </thead>
-	      <tbody>
-		<tr>
-		  <th scope="row">1</th>
-		  <td id="chr1"></td>
-		</tr>
-		<tr>
-		  <th scope="row">2</th>
-		  <td id="chr2"></td>
-		</tr>
-		<tr>
-		  <th scope="row">3</th>
-		  <td id="chr3"></td>
-		</tr>
-		<tr>
-		  <th scope="row">4</th>
-		  <td id="chr4"></td>
-		</tr>
-		<tr>
-		  <th scope="row">5</th>
-		  <td id="chr5"></td>
-		</tr>
-		<tr>
-		  <th scope="row">6</th>
-		  <td id="chr6"></td>
-		</tr>
-		<tr>
-		  <th scope="row">7</th>
-		  <td id="chr7"></td>
-		</tr>
-		<tr>
-		  <th scope="row">8</th>
-		  <td id="chr8"></td>
-		</tr>
-		<tr>
-		  <th scope="row">9</th>
-		  <td id="chr9"></td>
-		</tr>
-		<tr>
-		  <th scope="row">10</th>
-		  <td id="chr10"></td>
-		</tr>
-		<tr>
-		  <th scope="row">11</th>
-		  <td id="chr11"></td>
-		</tr>
-		<tr>
-		  <th scope="row">12</th>
-		  <td id="chr12"></td>
-		</tr>
-		<tr>
-		  <th scope="row">13</th>
-		  <td id="chr13"></td>
-		</tr>
-		<tr>
-		  <th scope="row">14</th>
-		  <td id="chr14"></td>
-		</tr>
-		<tr>
-		  <th scope="row">15</th>
-		  <td id="chr15"></td>
-		</tr>
-		<tr>
-		  <th scope="row">16</th>
-		  <td id="chr16"></td>
-		</tr>
-		<tr>
-		  <th scope="row">17</th>
-		  <td id="chr17"></td>
-		</tr>
-		<tr>
-		  <th scope="row">18</th>
-		  <td id="chr18"></td>
-		</tr>
-		<tr>
-		  <th scope="row">19</th>
-		  <td id="chr19"></td>
-		</tr>
-		<tr>
-		  <th scope="row">20</th>
-		  <td id="chr20"></td>
-		</tr>
-		<tr>
-		  <th scope="row">21</th>
-		  <td id="chr21"></td>
-		</tr>
-		<tr>
-		  <th scope="row">22</th>
-		  <td id="chr22"></td>
-		</tr>
-	      </tbody>  
-	    </table>
-	  </div>
-	</div>
-      </div>
-      <div class="col-sm-1"></div>
-    </div>
-    
   </body>
 </html>
