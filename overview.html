@@ -13,12 +13,22 @@
       <div class="col-sm-1"></div>
 
       <div class="col-sm-5">
-	<div class="card h-25">
+	<div class="card">
 	  <div class="card-body">
 	    <h4 class="card-title">Patient Profile</h4>
 	    <h6 class="card-subtitle mb-2 text-muted"></h6>
 	    <p>Patient is a male of Ashkenazi Jewish heritage.</p>
-	    <p>Potential risk factors include...</p>
+	    <p>Potential risk factors include:</p>
+	    <p>Bloom syndrome</p>
+	    <p>Canavan disease</p>
+	    <p>Cystic fibrosis</p>
+	    <p>Familial dysautonomia</p>
+	    <p>Fanconi anemia</p>
+	    <p>Gaucher disease</p>
+	    <p>Mucolipidosis IV</p>
+	    <p>Niemann-Pick disease</p>
+	    <p>Tay-Sachs disease</p>
+	    <p>Torsion dystonia</p>
 	  </div>
 	</div>
       </div>
@@ -28,7 +38,35 @@
 	  <div class="card-body">
 	    <h4 class="card-title">Severity</h4>
 	    <h6 class="card-subtitle mb-2 text-muted">Top 5 Most Severe Diseases</h6>
-	    <div id="sev-list"></div>
+	    <table class="table">
+	      <thead>
+		<tr>
+		  <th scope="col">Disease</th>
+		  <th scope="col">Severity</th>
+		</tr>		
+	      </thead>
+	      <tbody>
+		<tr>
+		  <th scope="row" id="disease1"></th>
+		  <td id="severity1"></td>
+		</tr>
+		<tr>
+		  <th scope="row" id="disease2"></th>
+		  <td id="severity2"></td>
+		</tr>
+		<tr>
+		  <th scope="row" id="disease3"></th>
+		  <td id="severity3"></td>
+		</tr>
+		<tr>
+		  <th scope="row" id="disease4"></th>
+		  <td id="severity4"></td>
+		</tr>
+		<tr>
+		  <th scope="row" id="disease5"></th>
+		  <td id="severity5"></td>
+		</tr>
+	    </table>
 	  </div>
 	</div>
       </div>
@@ -62,7 +100,7 @@
       </div>
       
       <div class="col-sm-5">
-	<div class="card h-25">
+	<div class="card">
 	  <div class="card-body">
 	    <h4 class="card-title">Chromosomes</h4>
 	    <h6 class="card-subtitle mb-2 text-muted"></h6>

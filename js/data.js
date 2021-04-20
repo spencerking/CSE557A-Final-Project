@@ -283,12 +283,20 @@ function buildChromosomeBarChart(chromosomes) {
 */
 
 function displaySeverity(sevObj) {
+    i = 1;
     for (const [disease, severity] of Object.entries(sevObj)) {	
 	var fragment = document.createDocumentFragment();
-	var element = document.createElement('p');
-	element.innerHTML = disease + ' - ' + severity
+	var element = document.createElement('span');
+	element.innerHTML = disease
 	fragment.appendChild(element);
-	document.getElementById("sev-list").appendChild(fragment);
+	document.getElementById("disease"+i.toString()).appendChild(fragment);
+
+	fragment = document.createDocumentFragment();
+	element = document.createElement('span');
+	element.innerHTML = severity;
+	fragment.appendChild(element);
+	document.getElementById("severity"+i.toString()).appendChild(fragment);
+	i++;
     }
 }
 
