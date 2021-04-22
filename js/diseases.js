@@ -170,14 +170,14 @@ function filterValues(value) {
 		main.removeChild(main.firstChild);
 	}
 	dataset.forEach(function (row) {
-		createDiseaseCard(row["diseaseName"]);
-		/*if (row[filter_type] == value) {
-			var card = document.createElement("div");
+		if (row[filter_type] == value) {
+			createDiseaseCard(row["diseaseName"]);
+			/*var card = document.createElement("div");
 			card.classList.add("card");
 			card.classList.add("mb-3");
 			card.innerHTML = '<div class="card-body">\n'+JSON.stringify(row)+'</div>\n';			
-			main.appendChild(card);
-		}*/
+			main.appendChild(card);*/
+		}
 
 
 	}
