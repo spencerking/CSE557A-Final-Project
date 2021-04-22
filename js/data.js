@@ -248,4 +248,124 @@ setTimeout(() => {
     console.log(topNSeverities);
     console.log(diseaseNotes);
     displaySeverity(topNSeverities);
+	createDiseaseCard("Body mass index");
 }, 100);
+
+
+
+
+// Functionality for Disease Card
+
+
+
+function createDiseaseCard(disease) {
+   let card = document.createElement('div');
+    card.className = 'card';
+
+    let cardBody = document.createElement('div');
+    cardBody.className = 'card-body';
+
+	let title = document.createElement('h5');
+    title.innerText = disease;
+    title.className = 'card-title';
+
+	var btn = document.createElement("BUTTON");
+	btn.innerText = "collapse";
+	btn.onclick = function(){
+		cardBody.hidden = (btn.innerText === "expand") ? '' : 'hidden';
+		btn.innerText = (btn.innerText === "expand") ? 'collapse' : 'expand';	
+	};
+
+	let genes = listOfGenesCard(disease);
+	let diseaseInfo = diseaseInfoCard(disease);
+
+	
+	card.appendChild(title);
+	card.appendChild(btn);
+	cardBody.appendChild(genes);
+	cardBody.appendChild(diseaseInfo);
+    card.appendChild(cardBody);
+	
+	document.getElementById('disease-card-display').appendChild(card);
+}
+
+function listOfGenesCard(disease) {
+    let card = document.createElement('div');
+    card.className = 'card';
+
+    let cardBody = document.createElement('div');
+    cardBody.className = 'card-body';
+
+    let title = document.createElement('h6');
+    title.innerText = "List of Genes";
+    title.className = 'card-title';
+    cardBody.appendChild(title);
+
+
+    var genesID = new Set();
+    dataset.forEach(function(entry) {
+       if(entry['diseaseName']==disease && !genesID.has(entry['gene_id'])) {
+	var gene_symbol = document.createTextNode(entry['gene_symbol']);
+	var div = document.createElement('div');
+	div.appendChild(gene_symbol);
+	cardBody.appendChild(div);
+	genesID.add(entry['gene_id']);
+       }
+    });
+
+    card.appendChild(cardBody);
+    return card;
+}
+
+
+function diseaseInfoCard(disease) {
+    let card = document.createElement('div');
+    card.className = 'card';
+
+    let cardBody = document.createElement('div');
+    cardBody.className = 'card-body';
+
+    let title = document.createElement('h6');
+    title.innerText = "Disease Info";
+    title.className = 'card-title';
+    cardBody.appendChild(title);
+
+
+    var consequences = new Set();
+    var organs = new Set();
+    var severity = new Set();
+    dataset.forEach(function(entry) {
+       if(entry['diseaseName']==disease) {
+	consequences.add(entry['major_consequence']);
+	organs.add(entry['Organ']);
+	severity.add(entry['Severity']);
+	}
+    });
+
+	console.log(severity);
+	cardBody = straightenLists(cardBody, consequences, "Consequences");
+	cardBody = straightenLists(cardBody, organs, "Organs");
+	cardBody = straightenLists(cardBody, severity, "Severity");
+
+	card.appendChild(cardBody);
+	return card;
+
+}
+
+function straightenLists(cardBody, setOrigin, title) {
+	if(setOrigin.size > 1) {
+		var div = document.createElement('div');
+		var text = document.createTextNode(title+": "+ Array.from(setOrigin).join(", "));	
+		div.appendChild(text);
+		cardBody.appendChild(div);
+	} else {
+		var div = document.createElement('div');
+		var text = document.createTextNode(title+": "+ Array.from(setOrigin)[0]);	
+		div.appendChild(text);
+		cardBody.appendChild(div);
+	}
+
+	return cardBody
+}
+
+
