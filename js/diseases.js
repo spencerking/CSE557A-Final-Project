@@ -169,21 +169,19 @@ function filterValues(value) {
 	while (main.firstChild) {
 		main.removeChild(main.firstChild);
 	}
-	dataset.forEach(function (row) {
-		if (row[filter_type] == value) {
-			createDiseaseCard(row["diseaseName"]);
-			/*var card = document.createElement("div");
-			card.classList.add("card");
-			card.classList.add("mb-3");
-			card.innerHTML = '<div class="card-body">\n'+JSON.stringify(row)+'</div>\n';			
-			main.appendChild(card);*/
-		}
 
-
+	if (filter_type == "diseaseName") {
+		createDiseaseCard(value);
+	} else {
+		var disease_obj = {};
+		dataset.forEach(function (row) {
+			if (row[filter_type] == value) {
+				disease_obj[row["diseaseName"]] = 1;
+			}
+		});
+		Object.keys(disease_obj).forEach(createDiseaseCard);
 	}
-	);
 }
-
 
 function displaySeverity(sevObj) {
 	for (const [disease, severity] of Object.entries(sevObj)) {
@@ -225,7 +223,7 @@ function createDiseaseCard(disease) {
 
 	let genes = listOfGenesCard(disease);
 	let diseaseInfo = diseaseInfoCard(disease);
-	
+
 	card.appendChild(title);
 	cardBody.appendChild(diseaseInfo);
 	cardBody.appendChild(genes);
