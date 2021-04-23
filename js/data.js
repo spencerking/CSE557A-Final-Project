@@ -5,6 +5,8 @@ d3.tsv("./data/data_removed_NA_genes.tsv").then(function(data) {
     dataset = data;
 });
 
+
+
 /*function loadData() {
     const dataset = d3.tsv("./data/data_removed_NA_genes.tsv").then(function(data) {
 	return data;
@@ -346,5 +348,13 @@ setTimeout(() => {
     console.log(topNSeverities);
     console.log(diseaseNotes);
     displaySeverity(topNSeverities);
+	  createDiseaseCard("Body mass index");
     displayChromosomes(c);
 }, 100);
+
+
+
+
+
+
+
