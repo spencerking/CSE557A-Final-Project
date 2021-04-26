@@ -348,8 +348,8 @@ setTimeout(() => {
     console.log(topNSeverities);
     console.log(diseaseNotes);
     displaySeverity(topNSeverities);
-	  createDiseaseCard("Body mass index");
     displayChromosomes(c);
+    createDiseaseCard("Body mass index");
 }, 100);
 
 
