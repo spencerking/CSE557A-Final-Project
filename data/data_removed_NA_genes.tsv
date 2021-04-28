@@ -3,7 +3,7 @@ chromosome	position	alleles	gene_symbol	gene_id	major_consequence	diseaseName	Or
 1	3412644	"[""G"",""A""]"	MEGF6	ENSG00000162591	intron_variant	LEFT VENTRICULAR NONCOMPACTION 8	Heart	Unknown	None
 1	15445655	"[""GTGC"",""GCGG""]"	TMEM51-AS1	ENSG00000175147	intron_variant	"Pancreatitis, Chronic"	Pancreas	Unknown	None
 1	21318845	"[""AAT"",""A""]"	EIF4G3	ENSG00000075151	intron_variant	Body mass index	Weight	Unknown	None
-1	85581241	"[""A"",""C""]"	WDR63	ENSG00000162643	intron_variant	"Leukemia, Myelocytic, Acute"	Bone Marrow/Blood	Critical	None
+1	85581241	"[""A"",""C""]"	WDR63	ENSG00000162643	intron_variant	"Leukemia, Myelocytic, Acute"	Blood	Critical	None
 1	94042830	"[""C"",""CG""]"	BCAR3	ENSG00000137936	intron_variant	"Night blindness, congenital stationary"	Eye	Unknown	None
 1	156314104	"[""T"",""C""]"	TSACC	ENSG00000163467	intron_variant	Red Blood Cell Count measurement	Blood	Unknown	None
 1	179575782	"[""G"",""A""]"	TDRD5	ENSG00000162782	intron_variant	Idiopathic Nephrotic Syndrome	Kidney	Unknown	None
@@ -17,7 +17,7 @@ chromosome	position	alleles	gene_symbol	gene_id	major_consequence	diseaseName	Or
 2	178781157	"[""C"",""T""]"	PDE11A	ENSG00000128655	intron_variant	"Myopathy, Early-Onset, with Fatal Cardiomyopathy"	Heart	Unknown	None
 2	190999673	"[""C"",""T""]"	C2orf88	ENSG00000187699	intron_variant	"CANDIDIASIS, FAMILIAL, 7"	General	Unknown	None
 2	202552837	"[""G"",""C""]"	MPP4	ENSG00000082126	intron_variant	"Pulmonary Hypertension, Primary, 1"	Heart	Unknown	None
-2	224844919	"[""C"",""G""]"	SERPINE2	ENSG00000135919	intron_variant	"Leukemia, Myelocytic, Acute"	Bone Marrow/Blood	Critical	None
+2	224844919	"[""C"",""G""]"	SERPINE2	ENSG00000135919	intron_variant	"Leukemia, Myelocytic, Acute"	Blood	Critical	None
 2	227893863	"[""C"",""T""]"	COL4A4	ENSG00000081052	intron_variant	Malignant neoplasm of breast	Breast	Unknown	None
 2	233616709	"[""A"",""G""]"	GIGYF2	ENSG00000204120	intron_variant	Bilirubin measurement	Liver	Unknown	None
 2	233760761	"[""T"",""TACTCCTCG""]"	NGEF	ENSG00000066248	intron_variant	"Crigler Najjar syndrome, type 1"	Liver	Unknown	None
@@ -28,7 +28,7 @@ chromosome	position	alleles	gene_symbol	gene_id	major_consequence	diseaseName	Or
 3	58078717	"[""G"",""A""]"	FLNB	ENSG00000136068	intron_variant	Boomerang dysplasia	Skeleton	Unknown	None
 3	133601021	"[""G"",""A""]"	RAB6B	ENSG00000154917	intron_variant	Malignant neoplasm of breast	Breast	Unknown	None
 3	152066793	"[""A"",""G""]"	MBNL1	ENSG00000152601	intron_variant	"Pyloric Stenosis, Hypertrophic"	Stomach	Low	A condition in which the opening between the stomach and small intestine thickens. Typically resolves within days or weeks.
-3	173684990	"[""G"",""A""]"	NLGN1	ENSG00000169760	intron_variant	"Leukemia, Myelocytic, Acute"	Bone Marrow/Blood	Critical	None
+3	173684990	"[""G"",""A""]"	NLGN1	ENSG00000169760	intron_variant	"Leukemia, Myelocytic, Acute"	Blood	Critical	None
 3	186948673	"[""A"",""G""]"	MASP1	ENSG00000127241	intron_variant	"Diabetes Mellitus, Non-Insulin-Dependent"	Unknown	Unknown	None
 4	1804377	"[""G"",""A""]"	FGFR3	ENSG00000068078	intron_variant	Achondroplasia	Skeleton	Unknown	None
 4	21244175	"[""G"",""A""]"	KCNIP4	ENSG00000185774	intron_variant	Adolescent idiopathic scoliosis	Unknown	Unknown	None
@@ -81,8 +81,8 @@ chromosome	position	alleles	gene_symbol	gene_id	major_consequence	diseaseName	Or
 9	239313	"[""G"",""C""]"	DOCK8	ENSG00000107099	intron_variant	Platelet mean volume determination (procedure)	Blood	Unknown	None
 9	331490	"[""T"",""G""]"	DOCK8	ENSG00000107099	intron_variant	Platelet mean volume determination (procedure)	Blood	Unknown	None
 9	607178	"[""C"",""G""]"	KANK1	ENSG00000107104	intron_variant	Body Height	Height	Unknown	None
-9	641720	"[""G"",""C""]"	KANK1	ENSG00000107104	intron_variant	"Leukemia, Myelocytic, Acute"	Bone Marrow/Blood	Critical	None
-9	648732	"[""T"",""A""]"	KANK1	ENSG00000107104	intron_variant	"Leukemia, Myelocytic, Acute"	Bone Marrow/Blood	Critical	None
+9	641720	"[""G"",""C""]"	KANK1	ENSG00000107104	intron_variant	"Leukemia, Myelocytic, Acute"	Blood	Critical	None
+9	648732	"[""T"",""A""]"	KANK1	ENSG00000107104	intron_variant	"Leukemia, Myelocytic, Acute"	Blood	Critical	None
 9	657340	"[""G"",""A""]"	KANK1	ENSG00000107104	intron_variant	Esophageal Neoplasms	Esophagus	Unknown	None
 9	677938	"[""G"",""T""]"	KANK1	ENSG00000107104	intron_variant	Nicotine Dependence	Unknown	Unknown	None
 9	680714	"[""G"",""A""]"	KANK1	ENSG00000107104	intron_variant	Uterine Fibroids	Uterus	Unknown	None
@@ -132,10 +132,10 @@ chromosome	position	alleles	gene_symbol	gene_id	major_consequence	diseaseName	Or
 9	4576680	"[""T"",""C""]"	SLC1A1	ENSG00000106688	synonymous_variant	Anxiety	Brain	Unknown	None
 9	4576851	"[""G"",""C""]"	SLC1A1	ENSG00000106688	intron_variant	Autistic Disorder	Brain	Unknown	None
 9	4594919	"[""C"",""G""]"	SPATA6L	ENSG00000106686	intron_variant	Obsessive-Compulsive Disorder	Brain	Unknown	None
-9	4684397	"[""G"",""T""]"	CDC37L1	ENSG00000106993	intron_variant	"Leukemia, Myelocytic, Acute"	Bone Marrow/Blood	Critical	None
-9	4691570	"[""C"",""T""]"	CDC37L1	ENSG00000106993	intron_variant	"Leukemia, Myelocytic, Acute"	Bone Marrow/Blood	Critical	None
-9	4695068	"[""A"",""G""]"	CDC37L1	ENSG00000106993	intron_variant	"Leukemia, Myelocytic, Acute"	Bone Marrow/Blood	Critical	None
-9	4698416	"[""G"",""A""]"	CDC37L1	ENSG00000106993	intron_variant	"Leukemia, Myelocytic, Acute"	Bone Marrow/Blood	Critical	None
+9	4684397	"[""G"",""T""]"	CDC37L1	ENSG00000106993	intron_variant	"Leukemia, Myelocytic, Acute"	Blood	Critical	None
+9	4691570	"[""C"",""T""]"	CDC37L1	ENSG00000106993	intron_variant	"Leukemia, Myelocytic, Acute"	Blood	Critical	None
+9	4695068	"[""A"",""G""]"	CDC37L1	ENSG00000106993	intron_variant	"Leukemia, Myelocytic, Acute"	Blood	Critical	None
+9	4698416	"[""G"",""A""]"	CDC37L1	ENSG00000106993	intron_variant	"Leukemia, Myelocytic, Acute"	Blood	Critical	None
 9	4740251	"[""A"",""C""]"	AK3	ENSG00000147853	intron_variant	Body Height	Height	Unknown	None
 9	4793798	"[""G"",""T""]"	RCL1	ENSG00000120158	intron_variant	Eosinophil count procedure	Blood	Unknown	None
 9	4814948	"[""G"",""C""]"	RCL1	ENSG00000120158	intron_variant	Red Blood Cell Count measurement	Blood	Unknown	None
@@ -144,9 +144,9 @@ chromosome	position	alleles	gene_symbol	gene_id	major_consequence	diseaseName	Or
 9	4840380	"[""A"",""G""]"	RCL1	ENSG00000120158	intron_variant	Red Blood Cell Count measurement	Blood	Unknown	None
 9	4843672	"[""C"",""G""]"	RCL1	ENSG00000120158	intron_variant	Red Blood Cell Count measurement	Blood	Unknown	None
 9	4844265	"[""T"",""C""]"	RCL1	ENSG00000120158	intron_variant	Red Blood Cell Count measurement	Blood	Unknown	None
-9	4844507	"[""G"",""T""]"	RCL1	ENSG00000120158	intron_variant	"Leukemia, Myelocytic, Acute"	Bone Marrow/Blood	Critical	None
+9	4844507	"[""G"",""T""]"	RCL1	ENSG00000120158	intron_variant	"Leukemia, Myelocytic, Acute"	Blood	Critical	None
 9	4844704	"[""T"",""C""]"	RCL1	ENSG00000120158	intron_variant	Red Blood Cell Count measurement	Blood	Unknown	None
-9	4845242	"[""G"",""A""]"	RCL1	ENSG00000120158	intron_variant	"Leukemia, Myelocytic, Acute"	Bone Marrow/Blood	Critical	None
+9	4845242	"[""G"",""A""]"	RCL1	ENSG00000120158	intron_variant	"Leukemia, Myelocytic, Acute"	Blood	Critical	None
 9	4845520	"[""A"",""G""]"	RCL1	ENSG00000120158	intron_variant	Red Blood Cell Count measurement	Blood	Unknown	None
 9	4847570	"[""T"",""C""]"	RCL1	ENSG00000120158	intron_variant	Red Blood Cell Count measurement	Blood	Unknown	None
 9	4848297	"[""A"",""G""]"	RCL1	ENSG00000120158	intron_variant	Red Blood Cell Count measurement	Blood	Unknown	None
@@ -165,8 +165,8 @@ chromosome	position	alleles	gene_symbol	gene_id	major_consequence	diseaseName	Or
 9	4865256	"[""A"",""G""]"	RCL1	ENSG00000120158	intron_variant	Corpuscular Hemoglobin Concentration Mean	Blood	Unknown	None
 9	4865338	"[""C"",""T""]"	RCL1	ENSG00000120158	intron_variant	Red Blood Cell Count measurement	Blood	Unknown	None
 9	4866010	"[""G"",""T""]"	RCL1	ENSG00000120158	intron_variant	Corpuscular Hemoglobin Concentration Mean	Blood	Unknown	None
-9	4884849	"[""A"",""C""]"	RCL1	ENSG00000120158	non_coding_transcript_exon_variant	"Leukemia, Myelocytic, Acute"	Bone Marrow/Blood	Critical	None
-9	4885267	"[""A"",""G""]"	RCL1	ENSG00000120158	non_coding_transcript_exon_variant	"Leukemia, Myelocytic, Acute"	Bone Marrow/Blood	Critical	None
+9	4884849	"[""A"",""C""]"	RCL1	ENSG00000120158	non_coding_transcript_exon_variant	"Leukemia, Myelocytic, Acute"	Blood	Critical	None
+9	4885267	"[""A"",""G""]"	RCL1	ENSG00000120158	non_coding_transcript_exon_variant	"Leukemia, Myelocytic, Acute"	Blood	Critical	None
 9	4985879	"[""A"",""G""]"	JAK2	ENSG00000096968	intron_variant	Psoriasis	Skin	Unknown	None
 9	4988761	"[""C"",""T""]"	JAK2	ENSG00000096968	intron_variant	Crohn Disease	Bowel	Unknown	None
 9	5003338	"[""G"",""A""]"	JAK2	ENSG00000096968	intron_variant	Hormone refractory prostate cancer	Prostate	Unknown	None
@@ -174,7 +174,7 @@ chromosome	position	alleles	gene_symbol	gene_id	major_consequence	diseaseName	Or
 9	5059440	"[""C"",""T""]"	JAK2	ENSG00000096968	intron_variant	Hormone refractory prostate cancer	Prostate	Unknown	None
 9	5069837	"[""G"",""A""]"	JAK2	ENSG00000096968	intron_variant	Platelet Count measurement	Blood	Unknown	None
 9	5072846	"[""G"",""A""]"	JAK2	ENSG00000096968	intron_variant	Primary Myelofibrosis	Bone Marrow	Unknown	None
-9	5081780	"[""G"",""A""]"	JAK2	ENSG00000096968	synonymous_variant	"Leukemia, Myelocytic, Acute"	Bone Marrow/Blood	Critical	None
+9	5081780	"[""G"",""A""]"	JAK2	ENSG00000096968	synonymous_variant	"Leukemia, Myelocytic, Acute"	Blood	Critical	None
 9	5084049	"[""G"",""T""]"	JAK2	ENSG00000096968	intron_variant	Ankylosing spondylitis	Spine	Unknown	None
 9	5112288	"[""C"",""T""]"	JAK2	ENSG00000096968	intron_variant	Metabolic Syndrome X	Heart	Chronic	"A cluster of conditions that increase the risk of heart disease, stroke, and diabetes."
 9	5377115	"[""C"",""T""]"	PLGRKT	ENSG00000107020	intron_variant	"Alcoholic Intoxication, Chronic"	Liver	Unknown	None
@@ -187,9 +187,9 @@ chromosome	position	alleles	gene_symbol	gene_id	major_consequence	diseaseName	Or
 9	5556786	"[""A"",""G""]"	PDCD1LG2	ENSG00000197646	intron_variant	Ankylosing spondylitis	Spine	Unknown	None
 9	5557672	"[""T"",""C""]"	PDCD1LG2	ENSG00000197646	missense_variant	Behcet Syndrome	Blood Vessel	Chronic	None
 9	5774661	"[""G"",""A""]"	KIAA1432	ENSG00000107036	3_prime_UTR_variant	Respiratory Tract Diseases	Respiratory	Unknown	None
-9	5791151	"[""G"",""A""]"	ERMP1	ENSG00000099219	intron_variant	"Leukemia, Myelocytic, Acute"	Bone Marrow/Blood	Critical	None
-9	5792106	"[""T"",""C""]"	ERMP1	ENSG00000099219	intron_variant	"Leukemia, Myelocytic, Acute"	Bone Marrow/Blood	Critical	None
-9	5792156	"[""G"",""A""]"	ERMP1	ENSG00000099219	intron_variant	"Leukemia, Myelocytic, Acute"	Bone Marrow/Blood	Critical	None
+9	5791151	"[""G"",""A""]"	ERMP1	ENSG00000099219	intron_variant	"Leukemia, Myelocytic, Acute"	Blood	Critical	None
+9	5792106	"[""T"",""C""]"	ERMP1	ENSG00000099219	intron_variant	"Leukemia, Myelocytic, Acute"	Blood	Critical	None
+9	5792156	"[""G"",""A""]"	ERMP1	ENSG00000099219	intron_variant	"Leukemia, Myelocytic, Acute"	Blood	Critical	None
 9	5893861	"[""G"",""A""]"	MLANA	ENSG00000120215	intron_variant	Multiple Sclerosis	Nerve	Unknown	None
 9	6051924	"[""T"",""G""]"	RP11-218I7.2	ENSG00000228739	intron_variant	Asthma	Respiratory	Chronic	None
 9	6064299	"[""C"",""G""]"	RP11-218I7.2	ENSG00000228739	intron_variant	Allergic Reaction	General	Unknown	None
@@ -232,12 +232,12 @@ chromosome	position	alleles	gene_symbol	gene_id	major_consequence	diseaseName	Or
 9	9039222	"[""A"",""G""]"	PTPRD	ENSG00000153707	intron_variant	Corneal Topography	Eye	Unknown	None
 9	9059545	"[""G"",""A""]"	PTPRD	ENSG00000153707	intron_variant	Resistant hypertensive disorder	Unknown	Unknown	None
 9	9350706	"[""T"",""C""]"	PTPRD	ENSG00000153707	intron_variant	Systolic Pressure	Unknown	Unknown	None
-9	9404584	"[""T"",""C""]"	PTPRD	ENSG00000153707	intron_variant	"Leukemia, Myelocytic, Acute"	Bone Marrow/Blood	Critical	None
-9	9404813	"[""G"",""A""]"	PTPRD	ENSG00000153707	intron_variant	"Leukemia, Myelocytic, Acute"	Bone Marrow/Blood	Critical	None
-9	9405003	"[""A"",""G""]"	PTPRD	ENSG00000153707	intron_variant	"Leukemia, Myelocytic, Acute"	Bone Marrow/Blood	Critical	None
-9	9405316	"[""C"",""T""]"	PTPRD	ENSG00000153707	intron_variant	"Leukemia, Myelocytic, Acute"	Bone Marrow/Blood	Critical	None
-9	9405431	"[""G"",""A""]"	PTPRD	ENSG00000153707	intron_variant	"Leukemia, Myelocytic, Acute"	Bone Marrow/Blood	Critical	None
-9	9410073	"[""G"",""C""]"	PTPRD	ENSG00000153707	intron_variant	"Leukemia, Myelocytic, Acute"	Bone Marrow/Blood	Critical	None
+9	9404584	"[""T"",""C""]"	PTPRD	ENSG00000153707	intron_variant	"Leukemia, Myelocytic, Acute"	Blood	Critical	None
+9	9404813	"[""G"",""A""]"	PTPRD	ENSG00000153707	intron_variant	"Leukemia, Myelocytic, Acute"	Blood	Critical	None
+9	9405003	"[""A"",""G""]"	PTPRD	ENSG00000153707	intron_variant	"Leukemia, Myelocytic, Acute"	Blood	Critical	None
+9	9405316	"[""C"",""T""]"	PTPRD	ENSG00000153707	intron_variant	"Leukemia, Myelocytic, Acute"	Blood	Critical	None
+9	9405431	"[""G"",""A""]"	PTPRD	ENSG00000153707	intron_variant	"Leukemia, Myelocytic, Acute"	Blood	Critical	None
+9	9410073	"[""G"",""C""]"	PTPRD	ENSG00000153707	intron_variant	"Leukemia, Myelocytic, Acute"	Blood	Critical	None
 9	9910123	"[""G"",""A""]"	PTPRD	ENSG00000153707	intron_variant	Respiratory Function Tests	Unknown	Unknown	None
 9	10043773	"[""A"",""G""]"	PTPRD	ENSG00000153707	intron_variant	Age at menarche	Unknown	Low	Male patient
 9	10251492	"[""A"",""T""]"	PTPRD	ENSG00000153707	intron_variant	Age at menarche	Unknown	Low	Male patient
@@ -247,11 +247,11 @@ chromosome	position	alleles	gene_symbol	gene_id	major_consequence	diseaseName	Or
 9	10337976	"[""T"",""A""]"	PTPRD	ENSG00000153707	intron_variant	Gestational Diabetes	Unknown	Unknown	None
 9	10341235	"[""C"",""G""]"	PTPRD	ENSG00000153707	intron_variant	Gestational Diabetes	Unknown	Unknown	None
 9	10369009	"[""A"",""T""]"	PTPRD	ENSG00000153707	intron_variant	Body mass index	Weight	Unknown	None
-9	10467074	"[""C"",""T""]"	PTPRD	ENSG00000153707	intron_variant	"Leukemia, Myelocytic, Acute"	Bone Marrow/Blood	Critical	None
-9	10471487	"[""C"",""T""]"	PTPRD	ENSG00000153707	intron_variant	"Leukemia, Myelocytic, Acute"	Bone Marrow/Blood	Critical	None
-9	10471937	"[""C"",""G""]"	PTPRD	ENSG00000153707	intron_variant	"Leukemia, Myelocytic, Acute"	Bone Marrow/Blood	Critical	None
-9	10478387	"[""G"",""A""]"	PTPRD	ENSG00000153707	intron_variant	"Leukemia, Myelocytic, Acute"	Bone Marrow/Blood	Critical	None
-9	10479527	"[""T"",""C""]"	PTPRD	ENSG00000153707	intron_variant	"Leukemia, Myelocytic, Acute"	Bone Marrow/Blood	Critical	None
+9	10467074	"[""C"",""T""]"	PTPRD	ENSG00000153707	intron_variant	"Leukemia, Myelocytic, Acute"	Blood	Critical	None
+9	10471487	"[""C"",""T""]"	PTPRD	ENSG00000153707	intron_variant	"Leukemia, Myelocytic, Acute"	Blood	Critical	None
+9	10471937	"[""C"",""G""]"	PTPRD	ENSG00000153707	intron_variant	"Leukemia, Myelocytic, Acute"	Blood	Critical	None
+9	10478387	"[""G"",""A""]"	PTPRD	ENSG00000153707	intron_variant	"Leukemia, Myelocytic, Acute"	Blood	Critical	None
+9	10479527	"[""T"",""C""]"	PTPRD	ENSG00000153707	intron_variant	"Leukemia, Myelocytic, Acute"	Blood	Critical	None
 9	10512307	"[""T"",""C""]"	PTPRD	ENSG00000153707	intron_variant	Adolescent idiopathic scoliosis	Spine	Unknown	None
 9	10582445	"[""T"",""C""]"	PTPRD	ENSG00000153707	intron_variant	Mood Disorders	Brain	Unknown	None
 9	10594635	"[""T"",""C""]"	PTPRD	ENSG00000153707	intron_variant	Diastolic blood pressure	Unknown	Unknown	None
@@ -324,7 +324,7 @@ chromosome	position	alleles	gene_symbol	gene_id	major_consequence	diseaseName	Or
 15	43376592	"[""T"",""C""]"	UBR1	ENSG00000159459	intron_variant	"MICROCEPHALY AND CHORIORETINOPATHY, AUTOSOMAL RECESSIVE, 3"	Unknown	Unknown	None
 15	49547350	"[""T"",""C""]"	GALK2	ENSG00000156958	intron_variant	Blood Protein Measurement	Blood	Unknown	None
 15	74181301	"[""C"",""A""]"	TBC1D21	ENSG00000167139	intron_variant	ANOPHTHALMIA AND PULMONARY HYPOPLASIA	Unknown	Unknown	None
-16	64305190	"[""G"",""T""]"	AC012322.1	ENSG00000261028	intron_variant	"Leukemia, Myelocytic, Acute"	Bone Marrow/Blood	Critical	None
+16	64305190	"[""G"",""T""]"	AC012322.1	ENSG00000261028	intron_variant	"Leukemia, Myelocytic, Acute"	Blood	Critical	None
 16	68738324	"[""G"",""T""]"	CDH3	ENSG00000062038	intron_variant	"Neoplastic Syndromes, Hereditary"	General	Unknown	None
 16	82861212	"[""C"",""T""]"	CDH13	ENSG00000140945	intron_variant	Adolescent idiopathic scoliosis	Unknown	Unknown	None
 17	3499068	"[""G"",""T""]"	TRPV1	ENSG00000196689	5_prime_UTR_variant	Canavan Disease	Brain	Unknown	None
@@ -346,20 +346,20 @@ chromosome	position	alleles	gene_symbol	gene_id	major_consequence	diseaseName	Or
 18	666371	"[""G"",""A""]"	TYMS	ENSG00000176890	intron_variant	Spina Bifida	Unknown	Unknown	None
 18	672792	"[""C"",""T""]"	ENOSF1	ENSG00000132199	3_prime_UTR_variant	Glioma	Brain	Unknown	None
 18	673016	"[""C"",""T""]"	TYMS	ENSG00000176890	3_prime_UTR_variant	Neural Tube Defects	Brain	Unknown	None
-18	673086	"[""A"",""G""]"	TYMS	ENSG00000176890	3_prime_UTR_variant	Acute lymphocytic leukemia	Bone Marrow/Blood	Critical	None
+18	673086	"[""A"",""G""]"	TYMS	ENSG00000176890	3_prime_UTR_variant	Acute lymphocytic leukemia	Blood	Critical	None
 18	676008	"[""G"",""C""]"	ENOSF1	ENSG00000132199	intron_variant	Neoplasms	General	Unknown	None
 18	676789	"[""A"",""T""]"	ENOSF1	ENSG00000132199	intron_variant	Malignant neoplasm of endometrium	Uterus	Low	Male patient
 18	677302	"[""G"",""A""]"	ENOSF1	ENSG00000132199	intron_variant	Malignant neoplasm of endometrium	Uterus	Low	Male patient
 18	677931	"[""C"",""G""]"	ENOSF1	ENSG00000132199	intron_variant	Malignant neoplasm of endometrium	Uterus	Low	Male patient
 18	683607	"[""C"",""T""]"	ENOSF1	ENSG00000132199	intron_variant	Malignant neoplasm of stomach	Stomach	Unknown	None
-18	2170567	"[""T"",""C""]"	RP11-161I6.2	ENSG00000263745	intron_variant	"Leukemia, Myelocytic, Acute"	Bone Marrow/Blood	Critical	None
+18	2170567	"[""T"",""C""]"	RP11-161I6.2	ENSG00000263745	intron_variant	"Leukemia, Myelocytic, Acute"	Blood	Critical	None
 18	4127583	"[""A"",""C""]"	DLGAP1	ENSG00000170579	intron_variant	Mental disorders	Brain	Unknown	None
 19	406934	"[""C"",""A""]"	C2CD4C	ENSG00000183186	3_prime_UTR_variant	Polysomnography	Brain	Unknown	None
 19	498524	"[""A"",""G""]"	MADCAM1	ENSG00000099866	synonymous_variant	Acute GVH disease	Bone Marrow	Unknown	None
 19	582253	"[""T"",""C""]"	BSG	ENSG00000172270	intron_variant	Cerebral Infarction	Brain	Unknown	None
 19	582927	"[""T"",""A""]"	BSG	ENSG00000172270	3_prime_UTR_variant	Coronary Arteriosclerosis	Heart	Unknown	None
-19	655608	"[""T"",""C""]"	RNF126	ENSG00000070423	intron_variant	"Leukemia, Myelocytic, Acute"	Bone Marrow/Blood	Critical	None
-19	657666	"[""C"",""T""]"	RNF126	ENSG00000070423	intron_variant	"Leukemia, Myelocytic, Acute"	Bone Marrow/Blood	Critical	None
+19	655608	"[""T"",""C""]"	RNF126	ENSG00000070423	intron_variant	"Leukemia, Myelocytic, Acute"	Blood	Critical	None
+19	657666	"[""C"",""T""]"	RNF126	ENSG00000070423	intron_variant	"Leukemia, Myelocytic, Acute"	Blood	Critical	None
 19	689590	"[""C"",""G""]"	PRSS57	ENSG00000185198	intron_variant	Blood Protein Measurement	Blood	Unknown	None
 19	799770	"[""A"",""G""]"	PTBP1	ENSG00000011304	intron_variant	"Diabetes Mellitus, Non-Insulin-Dependent"	Unknown	Unknown	None
 19	806673	"[""T"",""C""]"	PTBP1	ENSG00000011304	intron_variant	Blood Protein Measurement	Blood	Unknown	None
@@ -373,6 +373,6 @@ chromosome	position	alleles	gene_symbol	gene_id	major_consequence	diseaseName	Or
 19	44899959	"[""A"",""T""]"	ZNF285	ENSG00000267508	intron_variant	Mental deterioration	Brain	Unknown	None
 19	48591631	"[""G"",""GA""]"	PLA2G4C	ENSG00000105499	intron_variant	"ICHTHYOSIS, CONGENITAL, AUTOSOMAL RECESSIVE 14"	Skin	Unknown	"Congenital ichthyosis is a collective name for a group of monogenetic disorders of cornification, sometimes associated with systemic symptoms. There may be an abnormal quality or quantity of scale produced, abnormal thickness of stratum corneum or abnormal keratinocyte kinetics, often associated with skin inflammation. "
 19	54863017	"[""T"",""C""]"	CTD-2587H19.1	ENSG00000268802	non_coding_transcript_exon_variant	Blood Protein Measurement	Blood	Unknown	None
-20	1136156	"[""C"",""A""]"	PSMF1	ENSG00000125818	intron_variant	"Leukemia, Myelocytic, Acute"	Bone Marrow/Blood	Critical	None
+20	1136156	"[""C"",""A""]"	PSMF1	ENSG00000125818	intron_variant	"Leukemia, Myelocytic, Acute"	Blood	Critical	None
 21	46353985	"[""A"",""G""]"	C21orf67	ENSG00000183250	3_prime_UTR_variant	"Microcephalic Osteodysplastic Primordial Dwarfism, Type II"	Skeleton	Unknown	None
 22	50258690	"[""C"",""T""]"	ZBED4	ENSG00000100426	intron_variant	Diverticular Diseases	Large Intestine	Unknown	None
