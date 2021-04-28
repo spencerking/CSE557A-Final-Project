@@ -61,7 +61,7 @@ chromosome	position	alleles	gene_symbol	gene_id	major_consequence	diseaseName	Or
 6	51912577	"[""C"",""A""]"	PKHD1	ENSG00000170927	intron_variant	Autosomal Recessive Polycystic Kidney Disease	Kidney	Unknown	None
 6	56022442	"[""C"",""T""]"	COL21A1	ENSG00000124749	intron_variant	Vital capacity	Unknown	Unknown	None
 6	111205242	"[""C"",""G""]"	AMD1	ENSG00000123505	intron_variant	Hypothyroidism	Thyroid	Chronic	None
-6	117252341	"[""A"",""G""]"	RFX6	ENSG00000185002	intron_variant	Waist-Hip Ratio	Weight	Unknown	None
+6	117252341	"[""A"",""G""]"	RFX6	ENSG00000185002	intron_variant	Waist-Hip Ratio	Weight	Low	None
 6	152488422	"[""T"",""C""]"	SYNE1	ENSG00000131018	intron_variant	"SPINOCEREBELLAR ATAXIA, AUTOSOMAL RECESSIVE 8 (disorder)"	Brain	Unknown	None
 6	163932893	"[""C"",""T""]"	QKI	ENSG00000112531	intron_variant	Mean blood pressure	Blood	Unknown	None
 7	55163737	"[""C"",""G""]"	EGFR	ENSG00000146648	intron_variant	Head and Neck Neoplasms	Unknown	Unknown	None
@@ -241,7 +241,7 @@ chromosome	position	alleles	gene_symbol	gene_id	major_consequence	diseaseName	Or
 9	9910123	"[""G"",""A""]"	PTPRD	ENSG00000153707	intron_variant	Respiratory Function Tests	Unknown	Unknown	None
 9	10043773	"[""A"",""G""]"	PTPRD	ENSG00000153707	intron_variant	Age at menarche	Unknown	Low	Male patient
 9	10251492	"[""A"",""T""]"	PTPRD	ENSG00000153707	intron_variant	Age at menarche	Unknown	Low	Male patient
-9	10260263	"[""C"",""T""]"	PTPRD	ENSG00000153707	intron_variant	Malignant neoplasm of endometrium	Uterus	Unknown	None
+9	10260263	"[""C"",""T""]"	PTPRD	ENSG00000153707	intron_variant	Malignant neoplasm of endometrium	Uterus	Low	None
 9	10266786	"[""C"",""T""]"	PTPRD	ENSG00000153707	intron_variant	Endometrial Carcinoma	Uterus	Unknown	None
 9	10319881	"[""A"",""C""]"	PTPRD	ENSG00000153707	intron_variant	Gestational Diabetes	Unknown	Unknown	None
 9	10337976	"[""T"",""A""]"	PTPRD	ENSG00000153707	intron_variant	Gestational Diabetes	Unknown	Unknown	None
@@ -352,7 +352,7 @@ chromosome	position	alleles	gene_symbol	gene_id	major_consequence	diseaseName	Or
 18	677302	"[""G"",""A""]"	ENOSF1	ENSG00000132199	intron_variant	Malignant neoplasm of endometrium	Uterus	Low	Male patient
 18	677931	"[""C"",""G""]"	ENOSF1	ENSG00000132199	intron_variant	Malignant neoplasm of endometrium	Uterus	Low	Male patient
 18	683607	"[""C"",""T""]"	ENOSF1	ENSG00000132199	intron_variant	Malignant neoplasm of stomach	Stomach	Unknown	None
-18	2170567	"[""T"",""C""]"	RP11-161I6.2	ENSG00000263745	intron_variant	"Leukemia, Myelocytic, Acute"	Bone Marrow/Blood	Unknown	None
+18	2170567	"[""T"",""C""]"	RP11-161I6.2	ENSG00000263745	intron_variant	"Leukemia, Myelocytic, Acute"	Bone Marrow/Blood	Critical	None
 18	4127583	"[""A"",""C""]"	DLGAP1	ENSG00000170579	intron_variant	Mental disorders	Brain	Unknown	None
 19	406934	"[""C"",""A""]"	C2CD4C	ENSG00000183186	3_prime_UTR_variant	Polysomnography	Brain	Unknown	None
 19	498524	"[""A"",""G""]"	MADCAM1	ENSG00000099866	synonymous_variant	Acute GVH disease	Bone Marrow	Unknown	None
