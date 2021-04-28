@@ -11,5 +11,8 @@ http://disgenet.org
 Chromosome information:
 https://medlineplus.gov/
 
+Heritage information:
+https://www.uofmhealth.org/health-library/tv7879
+
 Web dev:
 https://getbootstrap.com
