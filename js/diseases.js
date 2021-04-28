@@ -71,43 +71,6 @@ function diseaseSeverity(dataset) {
 	return severity;
 }
 
-function getTopNDiseasesBySeverity(n, disSev) {
-	topn = {};
-	ds = disSev;
-	i = 0;
-
-	// Get critical diseases
-	for (const [disease, severity] of Object.entries(ds)) {
-		//console.log(key);
-		//console.log(value);
-		if (i == n) {
-			break;
-		}
-
-		if (severity == 'Critical') {
-			topn[disease] = severity;
-			i++;
-		}
-	}
-
-	// Get chronic diseases
-	for (const [disease, severity] of Object.entries(ds)) {
-		if (i == n) {
-			break;
-		}
-
-		if (severity == 'Chronic') {
-			topn[disease] = severity;
-			i++;
-		}
-	}
-
-	// TODO:
-	// Add more loops for additional severity levels
-
-	return topn;
-}
-
 // Returns a key-value array of diseases and their notes
 function getDiseaseNotes(dataset) {
 	notes = {};
@@ -321,9 +284,6 @@ o = null;
 // Diseases and their severities
 s = null;
 
-// The top n diseases and their severities
-topNSeverities = null;
-
 // Diseases and their notes
 diseaseNotes = null;
 
@@ -331,12 +291,10 @@ setTimeout(() => {
 	d = uniqueDiseases(dataset);
 	o = uniqueOrgans(dataset);
 	s = diseaseSeverity(dataset);
-	topNSeverities = getTopNDiseasesBySeverity(5, s);
 	diseaseNotes = getDiseaseNotes(dataset);
 	console.log(d);
 	console.log(o);
 	console.log(s);
-	console.log(topNSeverities);
 	console.log(diseaseNotes);
 	setFilterType(document.getElementById("filter-select").value);
 }, 100);
