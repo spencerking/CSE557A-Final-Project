@@ -8,6 +8,11 @@
     <script src="js/data.js"></script>
     <script src="js/includehtml.js"></script>
   </head>
+  <style>
+    .table {
+	margin-bottom: 0;
+    }
+  </style>
   <body>
     <a href="./diseases.html">Diseases</a>
 
@@ -315,7 +320,11 @@
 		      <td id="chr21"></td>
 		    </tr>
 		    <tr>
-		      <th scope="row">22</th>
+		      <th scope="row">
+			<button type="button" data-toggle="modal" data-target="#chr21Modal">
+			  22
+			</button>
+		      </th>
 		      <td id="chr22"></td>
 		    </tr>
 		  </tbody>  
