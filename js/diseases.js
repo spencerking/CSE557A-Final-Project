@@ -240,19 +240,23 @@ function diseaseInfoCard(disease) {
 	var consequences = new Set();
 	var organs = new Set();
 	var severity = new Set();
+	var description = new Set();
 	dataset.forEach(function (entry) {
 		if (entry['diseaseName'] == disease) {
 			consequences.add(entry['major_consequence']);
 			organs.add(entry['Organ']);
 			severity.add(entry['Severity']);
+			description.add(entry['Notes'])
+			
 		}
 	});
 
-	console.log(severity);
+	
+	
+	cardBody = straightenLists(cardBody, description, "Description");
 	cardBody = straightenLists(cardBody, consequences, "Consequences");
 	cardBody = straightenLists(cardBody, organs, "Organs");
 	cardBody = straightenLists(cardBody, severity, "Severity");
-
 	card.appendChild(cardBody);
 	return card;
 
