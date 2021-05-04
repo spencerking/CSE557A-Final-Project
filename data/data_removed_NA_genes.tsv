@@ -327,7 +327,7 @@ chromosome	position	alleles	gene_symbol	gene_id	major_consequence	diseaseName	Or
 16	64305190	"[""G"",""T""]"	AC012322.1	ENSG00000261028	intron_variant	"Leukemia, Myelocytic, Acute"	Blood	Critical	"A type of cancer of the blood and bone marrow with excess immature white blood cells. AML progresses rapidly, with myeloid cells interfering with the production of normal white blood cells, red blood cells, and platelets."
 16	68738324	"[""G"",""T""]"	CDH3	ENSG00000062038	intron_variant	"Neoplastic Syndromes, Hereditary"	General	Data unavailable	None
 16	82861212	"[""C"",""T""]"	CDH13	ENSG00000140945	intron_variant	Adolescent idiopathic scoliosis	Spine	Data unavailable	None
-17	3499068	"[""G"",""T""]"	TRPV1	ENSG00000196689	5_prime_UTR_variant	Canavan Disease	Brain	Critical	"Canavan disease, or Canavan-Van Bogaert-Bertrand disease, is a rare and fatal autosomal recessive degenerative disorder that causes progressive damage to nerve cells and loss of white matter in the brain."
+17	3499068	"[""G"",""T""]"	TRPV1	ENSG00000196689	5_prime_UTR_variant	Canavan Disease	Brain	Fatal	"Canavan disease, or Canavan-Van Bogaert-Bertrand disease, is a rare and fatal autosomal recessive degenerative disorder that causes progressive damage to nerve cells and loss of white matter in the brain."
 17	16127206	"[""A"",""C""]"	PIGL	ENSG00000108474	intron_variant	Forced expiratory volume function	Unknown	Data unavailable	None
 17	40631693	"[""T"",""G""]"	ATP6V0A1	ENSG00000033627	intron_variant	"MENINGIOMA, FAMILIAL, SUSCEPTIBILITY TO"	Unknown	Data unavailable	None
 17	46034247	"[""A"",""G""]"	PRR15L	ENSG00000167183	intron_variant	Primary biliary cirrhosis	Liver	Data unavailable	None

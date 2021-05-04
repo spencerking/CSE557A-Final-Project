@@ -92,10 +92,20 @@ function getTopNDiseasesBySeverity(n, disSev) {
     ds = disSev;    
     i = 0;
 
+    // Get fatal diseases
+    for (const [disease, severity] of Object.entries(ds)) {
+	if (i == n) {
+	    break;
+	}
+	
+	if (severity == 'Fatal') {
+	    topn[disease] = severity;
+	    i++;
+	}
+    }
+
     // Get critical diseases
     for (const [disease, severity] of Object.entries(ds)) {
-	//console.log(key);
-	//console.log(value);
 	if (i == n) {
 	    break;
 	}
@@ -147,8 +157,8 @@ function getDiseaseNotes(dataset) {
 // Largely copied from: https://www.d3-graph-gallery.com/graph/donut_label.html
 function buildOrganChart(organs) {
     // set the dimensions and margins of the graph
-    var width = 450
-    height = 450
+    var width = 530
+    height = 530
     margin = 76
 
     // The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
