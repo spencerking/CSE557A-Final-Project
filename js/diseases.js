@@ -254,7 +254,7 @@ function diseaseInfoCard(disease) {
 	
 	
 	cardBody = straightenLists(cardBody, description, "Description");
-	cardBody = straightenLists(cardBody, consequences, "Consequences");
+	//cardBody = straightenLists(cardBody, consequences, "Consequences");
 	cardBody = straightenLists(cardBody, organs, "Organs");
 	cardBody = straightenLists(cardBody, severity, "Severity");
 	card.appendChild(cardBody);
