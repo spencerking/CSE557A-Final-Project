@@ -149,7 +149,7 @@ function buildOrganChart(organs) {
     // set the dimensions and margins of the graph
     var width = 450
     height = 450
-    margin = 70
+    margin = 76
 
     // The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
     var radius = Math.min(width, height) / 2 - margin
@@ -174,7 +174,7 @@ function buildOrganChart(organs) {
     i = 0;
     otherCount = 0;
     for (const [key, value] of Object.entries(sortable)) {
-	if (i < 14) {
+	if (i < 15) {
 	    data[key] = value;
 	    i++;
 	} else {
