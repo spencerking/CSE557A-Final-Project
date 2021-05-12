@@ -21,56 +21,6 @@ function uniqueValues(column) {
 	return values;
 }
 
-
-// Returns a key-value array of diseases and their mutation counts
-function uniqueDiseases(dataset) {
-	diseases = {};
-	dataset.forEach(function (entry) {
-		name = entry['diseaseName'];
-		if (diseases[name] == null) {
-			diseases[name] = 1;
-		} else {
-			diseases[name] += 1;
-		}
-	});
-
-	return diseases;
-}
-
-// Returns a key-value array of organs and their mutation counts
-function uniqueOrgans(dataset) {
-	organs = {};
-	dataset.forEach(function (entry) {
-		name = entry['Organ'];
-		if (organs[name] == null) {
-			organs[name] = 1;
-		} else {
-			organs[name] += 1;
-		}
-	});
-
-	return organs;
-}
-
-// Returns a key-value array of diseases and their severity
-function diseaseSeverity(dataset) {
-	severity = {};
-	dataset.forEach(function (entry) {
-		name = entry['diseaseName'];
-		if (severity[name] == null) {
-			severity[name] = entry['Severity'];
-		} else {
-			// TODO:
-			// Can probably just remove this else and assume it'll all work fine
-			if (severity[name] != entry['Severity']) {
-				console.log('This should never happen if I annotate the data right');
-			}
-		}
-	});
-
-	return severity;
-}
-
 // Returns a key-value array of diseases and their notes
 function getDiseaseNotes(dataset) {
 	notes = {};
@@ -278,27 +228,11 @@ function straightenLists(cardBody, setOrigin, title) {
 	return cardBody
 }
 
-
-// Diseases and their counts
-d = null;
-
-// Organs and their counts
-o = null;
-
-// Diseases and their severities
-s = null;
-
 // Diseases and their notes
 diseaseNotes = null;
 
 setTimeout(() => {
-	d = uniqueDiseases(dataset);
-	o = uniqueOrgans(dataset);
-	s = diseaseSeverity(dataset);
 	diseaseNotes = getDiseaseNotes(dataset);
-	console.log(d);
-	console.log(o);
-	console.log(s);
-	console.log(diseaseNotes);
+	//console.log(diseaseNotes);
 	setFilterType(document.getElementById("filter-select").value);
 }, 100);
